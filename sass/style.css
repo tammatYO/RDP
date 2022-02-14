@@ -563,7 +563,7 @@ img {
 
 .section-title__heading {
   text-transform: uppercase;
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   line-height: 138.6%;
 }
 
@@ -615,7 +615,7 @@ img {
 }
 
 .section-title__subtitle {
-  font-family: 'Futura Book' ;
+  font-family: 'Futura Book'  ;
   text-transform: none;
   font-size: 1.43rem;
   line-height: 1.93rem;
@@ -755,7 +755,7 @@ img {
   bottom: 0;
   min-width: 17.6rem;
   min-height: 6.92rem;
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   font-size: 0.85rem;
   background-color: #131313;
   text-transform: uppercase;
@@ -812,7 +812,7 @@ img {
 
 .title {
   margin: 0;
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   text-transform: uppercase;
   font-size: 2.857rem;
   line-height: 3.8rem;
@@ -838,7 +838,7 @@ img {
 }
 
 .card__title {
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   font-size: 1.29rem;
   margin-top: 0;
   margin-bottom: 0.7rem;
@@ -858,7 +858,7 @@ img {
   left: 0;
   bottom: -1.79rem;
   font-size: 1.29rem;
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   text-transform: uppercase;
   font-weight: normal;
   background-color: #E3B873;
@@ -940,7 +940,7 @@ img {
 }
 
 .modal__title {
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   font-size: 1.357rem;
   text-align: center;
   margin: 0;
@@ -996,7 +996,7 @@ img {
 .swiper-slide__heading {
   font-size: 1.285rem;
   line-height: 1.78rem;
-  font-family: 'Yeseva One' ;
+  font-family: 'Yeseva One'  ;
   color: #E3B873;
   text-transform: uppercase;
   margin-bottom: 0.64rem;
@@ -1046,7 +1046,7 @@ img {
 }
 
 .steps .section-pretitle {
-  font-family: 'Futura Demi' ;
+  font-family: 'Futura Demi'  ;
   text-transform: uppercase;
   font-size: 1.07rem;
   line-height: 1.5rem;

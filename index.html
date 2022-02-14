@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
@@ -160,7 +160,7 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.section seciton--dark projects -->
+        <!-- /.section seciton dark projects -->
         <section class="section control">
             <div class="container">
                 <div class="section-title control__section-title section-title--light">
@@ -212,7 +212,7 @@
                     <!-- /.section-title__image -->
                 </div>
                 <!-- /.section-title -->
-                <div class="row">
+                <div class="row cards">
                     <div class="col-30">
                         <div class="card types__card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                             <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
@@ -314,10 +314,106 @@
                     <!-- /.col -->
                 </div>
                 <!-- /.row -->
+                <div class="row part">
+                    <div class="col parts wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                        <p class="parts__text">Наш специалист приедет для замеров в день контакта или назначит удобнуюдля вас дату</p>
+                        <p class="parts__text">Бесплатный замер</p>
+                        <p class="parts__text">Бесплатная консультация</p>
+                        <p class="parts__text">Получите смету расходов и сроки вашего будущего ремонта
+                        </p>
+                    </div>
+                    <!-- /.col parts -->
+                    <div class="col form-parts wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+                        <div class="parts-form">
+                            <h3 class="parts-form__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                            <form action="send.php" method="POST" class="form modal__form">
+                                <div class="input-group modal__input-group">
+                                    <label for="part-user-name" class="label form__label label--light">Имя</label>
+                                    <input type="text" name="userName" class="input from__input modal__input input--light" id="part-user-name" placeholder="Как вас зовут:">
+                                </div>
+                                <div class="input-group modal__input-group">
+                                    <label for="part-user-phone" class="label form__label label--light">Телефон</label>
+                                    <input type="tel" name="userPhone" class="input from__input modal__input input--light" id="part-user-phone" placeholder="Ваш телефон:">
+                                </div>
+                                <div class="input-group modal__input-group email_input">
+                                    <label for="part-user-email" class="label form__label label--light">Email</label>
+                                    <input type="email" name="userEmail" class="input from__input modal__input input--light" id="part-user-email" placeholder="Ваш email">
+                                </div>
+                                <div class="policy modal__policy">
+                                    <input type="checkbox" name="policy-checkbox" id="part-policy-checkbox" class="policy__checkbox" checked>
+                                    <label for="part-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                                </div>
+                                <!-- /.policy -->
+                                <button onclick="ym(87472899,'reachGoal','questionButton'); return true;" class="button button--primary">Вызвать замерщика</button>
+                            </form>
+                            <!-- /.form modal__form -->
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="discounts-container">
+                    <div class="discounts">
+                        <img src="./img/disocunt.png" alt="Скидки" class="discounts__img">
+                        <p class="discounts__text">Это поможет сэкономить 10 - 20% от стоимости материалов</p>
+                    </div>
+                    <!-- /.discounts -->
+                </div>     
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section types -->
+        <section class="section styles">
+            <div class="container">
+                <div class="row">
+                    <div class="col wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                        <div class="section-title section-title--left">
+                            <h2 class="section-title__heading section-title__heading--primary">Мы реализуем ваши самые смелые фантазии</h2>
+                            <!-- /.section-title__heading -->
+                            <img src="./img/style-adapt-1.jpg" alt="fantasy" class="section-title__img">
+                        </div>
+                        <!-- /.section-title -->
+                        
+                        <div class="styles-list">
+                            <ul>
+                                <li class="styles-list__item">Американская классика</li>
+                                <li class="styles-list__item">Имперский стиль</li>
+                                <li class="styles-list__item">Классика</li>
+                                <li class="styles-list__item">Лофт</li>
+                                <li class="styles-list__item">Минимализм</li>
+                                <li class="styles-list__item">Прованс</li>
+                                <li class="styles-list__item">Романтизм</li>
+                                <li class="styles-list__item">Скандинавский стиль</li>
+                                <li class="styles-list__item">Средиземноморский стиль</li>
+                                <li class="styles-list__item">Хайтек</li>
+                                <li class="styles-list__item">Эклектизм</li>
+                            </ul>
+                        </div>
+                        <!-- /.styles-list -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-1 wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+                                <img src="./img/style-1.jpg" alt="Стиль 1" class="styles-img">
+                                <img src="./img/style-2.jpg" alt="Стиль 2" class="styles-img">
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-2 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
+                                <img src="./img/style-3.jpg" alt="Стиль 3" class="styles-img">
+                                <img src="./img/style-4.jpg" alt="Стиль 4" class="styles-img">
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section styles -->
         <section class="section types design">
             <div class="container">
                 <div class="section-title types__section-title">
@@ -717,7 +813,7 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.section section--dark steps -->
+        <!-- /.section section dark steps -->
         <section class="section team">
             <div class="section-title team__section-title">
                 <h2 class="section-title__heading section-title__heading--light">Наша команда</h2>
@@ -889,20 +985,20 @@
                 <h3 class="footer__title">Остались вопросы?</h3>
                 <form action="#" class="form footer__form">
                     <div class="input-group footer__input-group">
-                        <label for="user-name" class="label form__label label--light">Имя</label>
-                        <input type="text" name="userName" class="input from__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
+                        <label for="footer-user-name" class="label form__label label--light">Имя</label>
+                        <input type="text" name="userName" class="input from__input footer__input input--light" id="footer-user-name" placeholder="Как вас зовут:">
                     </div>
                     <div class="input-group footer__input-group">
-                        <label for="user-phone" class="label form__label label--light">Телефон</label>
-                        <input type="tel" name="userPhone" class="input from__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                        <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
+                        <input type="tel" name="userPhone" class="input from__input footer__input input--light" id="footer-user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     <div class="input-group footer__input-group footer__input-group--full-width">
-                        <label for="user-question" class="label form__label label--light">Вопрос</label>
-                        <input type="text" name="userQuestion" class="input from__input footer__input input--light" id="user-question" placeholder="Я хочу спросить:">
+                        <label for="footer-user-question" class="label form__label label--light">Вопрос</label>
+                        <input type="text" name="userQuestion" class="input from__input footer__input input--light" id="footer-user-question" placeholder="Я хочу спросить:">
                     </div>
                     <div class="policy footer__policy">
-                        <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-                        <label for="policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
+                        <input type="checkbox" name="policy-checkbox" id="footer-policy-checkbox" class="policy__checkbox" checked>
+                        <label for="footer-policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
                     </div>
                     <!-- /.policy -->
                     <button class="button button--primary footer__button">Отправить</button>
@@ -923,6 +1019,15 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae99e417f3f146fd3efee26a9b854b92611571a12eb01c955ec080d228d8112e4&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
             <!-- /.map footer__map -->
+            <div class="contacts footer__contacts contacts-media">
+                <h3 class="contacts__desc contacts__desc--primary">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h3>
+                <div class="contacts__buttons">
+                    <div class="contacts__imgs"></div>
+                    <div class="contacts__imgs"></div>
+                </div>
+                <!-- /.contacts__img -->
+            </div>
+            <!-- /.footer__contacts contacts -->
         </div>
         <div class="footer__menu">
             <div class="container">
@@ -947,30 +1052,30 @@
         </div>
         <!-- /.footer__menu -->
     </footer>
-    <!-- /.footer section section--dark -->
+    <!-- /.footer section section dark -->
     <div class="modal">
         <div class="modal__dialog">
             <button class="modal__close"></button>
             <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
             <form action="send.php" method="POST" class="form modal__form">
                 <div class="input-group modal__input-group">
-                    <label for="user-name" class="label form__label label--light">Имя</label>
-                    <input type="text" name="userName" class="input from__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+                    <label for="modal-user-name" class="label form__label label--light">Имя</label>
+                    <input type="text" name="userName" class="input from__input modal__input input--light" id="modal-user-name" placeholder="Как вас зовут:">
                 </div>
                 <div class="input-group modal__input-group">
-                    <label for="user-phone" class="label form__label label--light">Телефон</label>
-                    <input type="tel" name="userPhone" class="input from__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                    <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+                    <input type="tel" name="userPhone" class="input from__input modal__input input--light" id="modal-user-phone" placeholder="Ваш номер телефона:">
                 </div>
                 <div class="input-group modal__input-group">
-                    <label for="user-email" class="label form__label label--light">Email</label>
-                    <input type="email" name="userEmail" class="input from__input modal__input input--light" id="user-email" placeholder="Ваш email">
+                    <label for="modal-user-email" class="label form__label label--light">Email</label>
+                    <input type="email" name="userEmail" class="input from__input modal__input input--light" id="modal-user-email" placeholder="Ваш email">
                 </div>
                 <div class="policy modal__policy">
-                    <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-                    <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                    <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+                    <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
-                <button class="button button--primary modal__button">Отправить заявку</button>
+                <button onclick="ym(87472899,'reachGoal','questionButton'); return true;" class="button button--primary modal__button">Отправить заявку</button>
             </form>
             <!-- /.form modal__form -->
         </div>

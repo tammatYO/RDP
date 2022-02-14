@@ -68,6 +68,12 @@ $(document).ready(function () {
           $('html, body').animate({scrollTop:0}, '300');
         });
 
+        $(".hero__scroll-down").click(function() { // ID откуда кливаем
+          $('html, body').animate({
+              scrollTop: $(".types").offset().top  // класс объекта к которому приезжаем
+          }, 1000); // Скорость прокрутки
+          });
+
         // var mySwiper = new Swiper ('.swiper-container', {
         //     loop: true
         // })
@@ -135,8 +141,26 @@ $(document).ready(function () {
                   required: "Заполните поле",
                   email: "Введите корректный email, в формате: name@domain.com"
                 }
+              },
+              submitHandler: function(form) {
+                $.ajax({
+                  type: "POST",
+                  url: "send.php",
+                  data: $(form).serialize(),
+                  success: function (response) {
+                    alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                  },
+                  error: function(response) {
+                    console.error('Ошибка ' + response);
+                  }
+                });
               }
         });
+
+        
+
         $('[type=tel]').mask('+7(000) 000-00-00');
 
         $('.control__form').validate({
